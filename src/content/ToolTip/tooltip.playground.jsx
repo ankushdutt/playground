@@ -8,7 +8,7 @@ const ToolTipPlayground = () => {
   const params = useView({
     componentName: "Tooltip",
     props: {
-      popOver: {
+      popover: {
         value: `<Text>PopOver Content</Text>`,
         type: PropTypes.ReactNode,
       },
@@ -19,6 +19,26 @@ const ToolTipPlayground = () => {
         value: `Modal`,
         type: PropTypes.Object,
       },
+      width: {
+        value: 200,
+        type: PropTypes.Number
+      },
+      withPointer: {
+        value: false,
+        type: PropTypes.Boolean
+      },
+      toggleOnPress: {
+        value: false,
+        type: PropTypes.Boolean
+      },
+      containerStyle: {
+        value: `{backgroundColor: '#BDBDBD', marginTop: '125px'}`,
+        type: PropTypes.Object
+      },
+      withPointer: {
+        value: false,
+        type: PropTypes.Boolean
+      }
     },
     scope: {
       Tooltip,
